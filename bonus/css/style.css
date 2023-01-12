@@ -27,12 +27,22 @@
     font-size: 25px;
 }
 
-.play {
+
+ #level {
+    padding: 5px 100px;
+}
+
+.play, select {
     background-color: lightgray;
     border: none;
-    padding: 5px 35px;
     border-radius: 5px;
 }
+
+.play {
+    padding: 5px 35px;
+}
+
+/* GRID STYLE */
 
 main {
     width: 100%;
@@ -46,6 +56,7 @@ main {
      width: 80vh;
      height: 80vh;
      flex-wrap: wrap;
+
 }
 
 .cell {
@@ -59,10 +70,4 @@ main {
 
 .click {
     background-color: yellow;
-}
-
-/* FOOTER STYLE */
-
-#container-signature {
-    padding: 20px 10px;
 }
