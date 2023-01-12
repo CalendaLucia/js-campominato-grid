@@ -71,3 +71,9 @@ main {
 .click {
     background-color: yellow;
 }
+
+/* FOOTER STYLE */
+
+#container-signature {
+    padding: 20px 10px;
+}
