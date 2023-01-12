@@ -13,7 +13,7 @@
     padding: 5px 10px;
 }
 
-#container-head, .title, main, #container, .cell   {
+#container-head, .title, main, #container, .cell, .cell-normal, .cell-hard   {
     display: flex;
     align-items: center;
 }
@@ -64,8 +64,28 @@ main {
     height: calc(100% / 10);
     border: 1px solid white;
     justify-content: center;
-   font-size: 13px;
-   background-color: yellowgreen;
+    font-size: 13px;
+    background-color: yellowgreen;
+}
+
+.cell-normal {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid white;
+    justify-content: center;
+    font-size: 13px;
+    background-color: yellowgreen;
+
+}
+
+.cell-hard {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid white;
+    justify-content: center;
+    font-size: 13px;
+    background-color: yellowgreen;
+
 }
 
 .click {
