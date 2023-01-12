@@ -25,7 +25,7 @@ play.addEventListener('click',
         
                  if (this.classList.contains('click')) {
         
-                    this.classList.remove('click');
+                   x
                  
                     // ed emetto un messaggio in console con il numero della cella cliccata.
                     

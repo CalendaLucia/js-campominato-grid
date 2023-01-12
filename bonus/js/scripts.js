@@ -8,26 +8,16 @@
 const play = document.querySelector('.play');
 const container = document.getElementById('container');
 
+function getOption() {
+   selectElement = document.getElementById('level');
+   output = selectElement.value;
+   alert.textContent = output;
+}
 
 
-
-function choose () {
+function easy() {
    
-   const gameLevel = document.getElementById('level').value;
-   console.log(gameLevel);
-
- }
-
- choose();
-
- if (gameLevel.value == easy ) {
-
-   
-   
- } 
-
-
-play.addEventListener('click', 
+   play.addEventListener('click', 
       
        function () {
   
@@ -62,16 +52,64 @@ play.addEventListener('click',
 
                
                 
-               });
+               })
 
-
-
-
-        
-       
-            
         }
         
           
        })
+
+
+
+}
+
+function normale() {
+   
+   play.addEventListener('click', 
+      
+       function () {
+  
+        for (let i = 1; i < 81; i++) {
+
+            // Creo le celle con un ciclo for e le aggiungo al container
+        
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.innerHTML = [i];
+            container.append(cell);
+        
+            // Creo l' evento che avverrà al click delle celle
+            cell.addEventListener('click', 
+        
+               function () {
+           
+                 // Quando l'utente clicca su ogni cella, la cella cliccata si colora di giallo 
+        
+                 if (this.classList.contains('click')) {
+        
+                    this.classList.remove('click');
+                 
+                    // ed emetto un messaggio in console con il numero della cella cliccata.
+                    
+        
+                 } else {
+              
+                    this.classList.add('click');  
+                    console.log([i]);
+                 }
+
+               
+                
+               })
+               
+        }
+        
+          
+       })
+
+
+
+}
+
+
 
